@@ -1,0 +1,92 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(171, 136, 77);
+}
+
+a.navbar-brand.mb-0.h1,
+.arz-link,
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    letter-spacing: .7em;
+    color: rgb(33, 61, 53);
+}
+
+.arz-link {
+    text-align: right;
+}
+
+.arz-ul:hover {
+    text-decoration: underline;
+}
+
+.logo,
+.logo-1922 {
+    max-height: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.logo-1922 {
+    margin-bottom: 50px;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+}
+
+.greeting {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+h5 {
+    font-style: italic;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: rgb(33, 61, 53);
+    margin-top: 100px;
+}
+
+footer p {
+    padding: 15px;
+    text-align: center;
+}
+
+footer p a {
+    color: #fff;
+}
+
+
+
+
+
+
+/*color: rgb(33, 61, 53); 248, 249, 250
