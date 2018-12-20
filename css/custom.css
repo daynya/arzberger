@@ -21,6 +21,11 @@ h3 {
     margin-top: 30px;
 }
 
+.greeting-paragraph {
+    margin-bottom: 45px;
+    margin-top: 50px;
+}
+
 a:hover {
     text-decoration: none;
     color: rgb(171, 136, 77);
@@ -83,10 +88,5 @@ footer p {
 footer p a {
     color: #fff;
 }
-
-
-
-
-
 
 /*color: rgb(33, 61, 53); 248, 249, 250
