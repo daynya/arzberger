@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-.container {
+.narrow-layout {
     max-width: 700px;
 }
 
@@ -17,7 +17,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-h3 {
+h4 {
     margin-top: 30px;
 }
 
@@ -32,8 +32,7 @@ a:hover {
 }
 
 a.navbar-brand.mb-0.h1,
-.arz-link,
-footer p {
+.arz-link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .7em;
     letter-spacing: .7em;
@@ -72,21 +71,72 @@ footer p {
 
 h5 {
     font-style: italic;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-footer {
-    background-color: rgb(33, 61, 53);
-    margin-top: 100px;
+.closing {
+    margin-bottom: 50px;
 }
 
-footer p {
-    padding: 15px;
-    text-align: center;
+.welcome {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-style: italic;
 }
 
-footer p a {
-    color: #fff;
+.categories, 
+.tools {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    letter-spacing: .4em;
 }
+
+.category-item {
+    margin: 20px;
+    padding: 50px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.categories li, 
+.tools li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    letter-spacing: .4em;
+    line-height: 2.5em;
+    color: rgb(33, 61, 53);
+}
+
+.categories li:hover,
+.tools li:hover {
+    background: #f8f9fa;
+}
+
+.need-help {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 
 /*color: rgb(33, 61, 53); 248, 249, 250
+
+.categories, 
+.tools {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories li, 
+.tools li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    letter-spacing: .4em;
+    line-height: 2.5em;
+    color: rgb(33, 61, 53);
+}
+
+.categories li:hover,
+.tools li:hover {
+    background: #f8f9fa;
+}
