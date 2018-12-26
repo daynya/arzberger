@@ -1,6 +1,9 @@
+/* General */
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    color: #444;
 }
 
 .narrow-layout {
@@ -9,7 +12,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #444;
     transition: .5s;
 }
 
@@ -21,8 +24,8 @@ h4 {
     margin-top: 30px;
 }
 
-.greeting-paragraph {
-    margin-bottom: 45px;
+h5 {
+    font-style: italic;
     margin-top: 50px;
 }
 
@@ -30,6 +33,18 @@ a:hover {
     text-decoration: none;
     color: rgb(171, 136, 77);
 }
+
+.greeting {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.greeting-paragraph {
+    margin-bottom: 45px;
+    margin-top: 50px;
+}
+
+/* Nav */
 
 a.navbar-brand.mb-0.h1,
 .arz-link {
@@ -41,10 +56,6 @@ a.navbar-brand.mb-0.h1,
 
 .arz-link {
     text-align: right;
-}
-
-.arz-ul:hover {
-    text-decoration: underline;
 }
 
 .logo,
@@ -64,50 +75,49 @@ a.navbar-brand.mb-0.h1,
     width: auto;
 }
 
-.greeting {
-    text-align: center;
-    margin: 50px 0px;
+/* Answers Page */
+.album-link {
+    font-style: bold;
+    color: red;
 }
 
-h5 {
-    font-style: italic;
-    margin-top: 50px;
-}
-
-.closing {
-    margin-bottom: 50px;
-}
+/* Album Page */
 
 .welcome {
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 75px;
     font-style: italic;
-}
-
-.categories, 
-.tools {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: .4em;
-}
-
-.categories {
-    font-size: .9em;
-}
-
-.tools {
-    font-size: .6em;
 }
 
 .category-item,
 .tool-item {
-    margin: 20px;
-    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f8f9fa;
     border-radius: 15px;
 }
 
+.category-item {
+    margin: 20px;
+    padding: 25px;
+    font-size: .9em;
+    letter-spacing: .4em;
+}
+
+.toolbox {
+    margin-top: 60px;
+}
+
+.tool-item {
+    margin: 15px;
+    padding: 20px;
+    font-size: .6em;
+    letter-spacing: .3em;
+}
+
 .category-title {
     margin-bottom: 0;
+    color: rgb(171, 136, 77);
+    transition: .5s;
 }
 
 .need-help {
@@ -120,12 +130,36 @@ h5 {
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    color: #444;
+    color: rgb(171, 136, 77);
     transition: .5s;
 }
 
-.fas:hover {
-    color: rgb(171, 136, 77);
+.fas:hover,
+.category-title:hover {
+    color: rgb(136, 109, 61);
 }
+
+.closing {
+    margin-bottom: 50px;
+}
+
+/* Product Page */
+
+.item-category {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.wedding-photo {
+    max-width: 300px;
+    height: auto;
+}
+
+.wedding-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    letter-spacing: .3em;
+}
+
 
 /*color: rgb(33, 61, 53); 248, 249, 250
