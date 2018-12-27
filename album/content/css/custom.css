@@ -12,8 +12,13 @@ body {
 
 a {
     text-decoration: none;
-    color: #444;
+    color: rgb(171, 136, 77);
     transition: .5s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(139, 111, 63);
 }
 
 h1, h2 {
@@ -27,11 +32,6 @@ h4 {
 h5 {
     font-style: italic;
     margin-top: 50px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(171, 136, 77);
 }
 
 .greeting {
@@ -58,6 +58,11 @@ a.navbar-brand.mb-0.h1,
     text-align: right;
 }
 
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: rgb(33, 61, 53);
+}
+
 .logo,
 .logo-1922 {
     max-height: 150px;
@@ -75,12 +80,6 @@ a.navbar-brand.mb-0.h1,
     width: auto;
 }
 
-/* Answers Page */
-.album-link {
-    font-style: bold;
-    color: red;
-}
-
 /* Album Page */
 
 .welcome {
@@ -92,13 +91,13 @@ a.navbar-brand.mb-0.h1,
 .category-item,
 .tool-item {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f8f9fa;
+    background-color: #f8f9fa;
     border-radius: 15px;
+    transition: .5s;
 }
 
 .category-item {
     margin: 20px;
-    padding: 25px;
     font-size: .9em;
     letter-spacing: .4em;
 }
@@ -109,34 +108,38 @@ a.navbar-brand.mb-0.h1,
 
 .tool-item {
     margin: 15px;
-    padding: 20px;
     font-size: .6em;
     letter-spacing: .3em;
+}
+
+.category-item a,
+.tool-item a {
+    display: block;
+    padding: 20px;
 }
 
 .category-title {
     margin-bottom: 0;
     color: rgb(171, 136, 77);
-    transition: .5s;
 }
 
-.need-help {
-    margin-top: 0;
-    margin-bottom: 50px;
+.category-item:hover,
+.tool-item:hover,
+a.category-item:hover {
+    background-color: #DFE0E1;
 }
 
 .fas {
     font-size: 4em;
     display: block;
-    margin: auto;
+    margin: auto; 
     margin-bottom: 10px;
     color: rgb(171, 136, 77);
-    transition: .5s;
 }
 
-.fas:hover,
-.category-title:hover {
-    color: rgb(136, 109, 61);
+.need-help {
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .closing {
@@ -150,15 +153,59 @@ a.navbar-brand.mb-0.h1,
     margin-left: 10px;
 }
 
+.wedding-item {
+    margin-top: 10px;
+}
+
 .wedding-photo {
     max-width: 300px;
+    margin-bottom: 5px;
     height: auto;
+    transition: .5s;
+}
+
+.wedding-photo:hover {
+    opacity: .5;
 }
 
 .wedding-title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .7em;
     letter-spacing: .3em;
+    margin-bottom: 30px;
+    color: #444;
+    transition: .5s;
+}
+
+.wedding-title:hover {
+    color: rgb(171, 136, 77);
+}
+
+.detail-photo {
+    max-width: 750px;
+    margin-top: 50px;
+}
+
+.item-description {
+    margin-top: 20px;
+}
+
+.item-title {
+    margin-top: 100px;
+}
+
+.item-details {
+    list-style: none;
+    text-align: left;
+    font-size: .8em;
+}
+
+.detail-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    letter-spacing: .3em;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
