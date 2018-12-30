@@ -159,12 +159,13 @@ a.category-item:hover {
 
 .wedding-photo {
     max-width: 300px;
+    max-height: 300px;
     margin-bottom: 5px;
-    height: auto;
     transition: .5s;
 }
 
-.wedding-photo:hover {
+.wedding-photo:hover,
+.thumbnail-photo:hover {
     opacity: .5;
 }
 
@@ -223,7 +224,18 @@ a.category-item:hover {
 
 .thumbnail-photo {
     max-width: 175px;
-    margin-top: 20px;
+    margin: 20px 20px 0px 20px;
+    transition: .5s;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.pairings p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    letter-spacing: .3em;
 }
 
 /* Media Queries */
