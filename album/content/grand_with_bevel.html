@@ -1,6 +1,6 @@
 <div class="row">    
     <div class="col-lg-8 col-md-12 product-photo">
-        <img src="img/smith18.jpg" class="img-fluid detail-photo" alt="wedding invitation">
+        <img src="img/smith18.jpg" class="img-fluid detail-photo" id="main-image" alt="wedding invitation">
     </div>
     <div class="col-lg-4 col-md-12 item-description">
         <h5 class="item-title">Grand Card with Bevel</h5>
@@ -28,28 +28,33 @@
         </p>
     </div>
     <div class="col-lg-8 col-md-12 thumbnails">
-        <a href="#">
-            <img src="img/mcguire.jpg" class="img-fluid thumbnail-photo" alt="wedding invitation">
-        </a>
-        <a href="#">
-            <img src="img/campbell18.jpg" class="img-fluid thumbnail-photo" alt="wedding invitation">
-        </a>
-        <a href="#">
-            <img src="img/parker18.jpg" class="img-fluid thumbnail-photo" alt="wedding invitation">
-        </a>
+        <img src="img/smith18.jpg" class="img-fluid thumbnail-photo" id="thumbnail-1" alt="wedding invitation">
+        <img src="img/mcguire.jpg" class="img-fluid thumbnail-photo" id="thumbnail-2" alt="wedding invitation">
+        <img src="img/campbell18.jpg" class="img-fluid thumbnail-photo" id="thumbnail-3" alt="wedding invitation">
     </div>
     <div class="col-lg-8 col-md-12 pairings">
         <h5 class="pair-with">Pair this with:</h5>
         <hr>
-        <a href="#">
-            <img src="img/reception1.jpg" class="img-fluid thumbnail-photo" alt="reception card">
-        </a>
-        <a href="#">
-            <img src="img/reply1.jpg" class="img-fluid thumbnail-photo" alt="reply set">
-        </a>
-        <a href="#">
-            <img src="img/reply2.jpg" class="img-fluid thumbnail-photo" alt="reply set">
-        </a>
+        <div class="row">
+            <div class="col">
+                <a href="#">
+                    <img src="img/reception1.jpg" class="img-fluid thumbnail-photo" alt="reception card">
+                    <p>RECEPTION CARD, #1 WITH BEVEL</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img src="img/reply1.jpg" class="img-fluid thumbnail-photo" alt="reply set">
+                    <p>REPLY SET, #1</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img src="img/reply2.jpg" class="img-fluid thumbnail-photo" alt="reply set">
+                    <p>REPLY SET, #2</p>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="col-lg-4 col-md-12 details-pricing">
         <h5 class="item-info">Item Info and Pricing</h5>
@@ -84,3 +89,17 @@
         </ul>
     </div> 
 </div>
+
+<script>
+     $(document).ready(function(){
+        $("#thumbnail-1").click(function(){
+            $("#main-image").attr("src", "img/smith18.jpg");
+        });
+        $("#thumbnail-2").click(function(){
+            $("#main-image").attr("src", "img/mcguire.jpg");
+        });
+        $("#thumbnail-3").click(function(){
+            $("#main-image").attr("src", "img/campbell18.jpg");
+        });
+     });
+</script>
