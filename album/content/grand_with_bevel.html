@@ -22,7 +22,7 @@
             any ink color, or none at all, and are available 
             with square or round corners. When ordering, clearly indicate 
             ink selection and corner treatment.
-            PLEASE NOTE: A Bevel may be applied to any stock. 
+            A Bevel may be applied to any stock. 
             For Bevel cost, refer to "General Additional Charges."
             Beveling adds up to 3 weeks to standard production time.
         </p>
@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-md-12 details-pricing">
+    <div class="col-lg-4 col-md-12 details-pricing" id="detail-1">
         <h5 class="item-info">Item Info and Pricing</h5>
         <hr>
         <ul class="item-details">
@@ -78,28 +78,107 @@
                 <p>Gold Tissue</p>
             <li class="detail-heading">PRICE</li>
                 <p>Eng-L, Lett/Foil-L  <a href="img/Pricing-Book-2018-WO.pdf" download="Wedding Album Pricing">(Click for Price Chart)</a></p>
+                <p>Price includes double envelopes as well as return address</p>
             <li class="detail-heading">NOTES</li>
                 <p>
                     Shown Engraved<br>
                     330# not available Thermographed/Printed<br>
+                    Embossed monogram incurs addtional charge<br>
                     Bevel incurs additional charge<br>
-                    Custom options of ribbon, wax seal and artwork incur additional charges.<br>
+                    Custom options of ribbon, wax seal and artwork incur additional charges<br>
                     Available in White (W18C330, W18I, W19O)
                 </p>
         </ul>
     </div> 
+    <div class="col-lg-4 col-md-12 details-pricing" id="detail-2">
+        <h5 class="item-info">Item Info and Pricing</h5>
+        <hr>
+        <ul class="item-details">
+            <li class="detail-heading">STOCK</li>
+                <p>
+                    #18 White Card, 330# (W18C330)<br>
+                    #18 White Envelope (W18I)<br>
+                    #19 White Envelope (W19O)
+                </p>
+            <li class="detail-heading">FONT</li>
+                <p>Customer furnished calligraphy</p>
+            <li class="detail-heading">ART</li>
+                <p>Family Crest</p>
+            <li class="detail-heading">INK</li>
+                <p>Charcoal + Emboss</p>
+            <li class="detail-heading">BEVEL</li>
+                <p>Plain</p>
+            <li class="detail-heading">LINER</li>
+                <p>Birch Tissue</p>
+            <li class="detail-heading">PRICE</li>
+                <p>Eng-L, Lett/Foil-L  <a href="img/Pricing-Book-2018-WO.pdf" download="Wedding Album Pricing">(Click for Price Chart)</a></p>
+                <p>Price includes double envelopes as well as return address</p>
+            <li class="detail-heading">NOTES</li>
+                <p>
+                    Shown Engraved<br>
+                    330# not available Thermographed/Printed<br>
+                    Embossed Crest incurs additional charge<br>
+                    Bevel incurs additional charge<br>
+                    Available in Ecru (E18C330, E18I, E19O)
+                </p>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-12 details-pricing" id="detail-3">
+        <h5 class="item-info">Item Info and Pricing</h5>
+        <hr>
+        <ul class="item-details">
+            <li class="detail-heading">STOCK</li>
+                <p>
+                    #18 Ecru Card, 330# (E18C330)<br>
+                    #18 Ecru Envelope (E18I)<br>
+                    #19 Ecru Envelope (E19O)
+                </p>
+            <li class="detail-heading">FONT</li>
+                <p>Bickham, Swash</p>
+            <li class="detail-heading">ART</li>
+                <p>Custom created monogram design</p>
+            <li class="detail-heading">INK</li>
+                <p>Black + Gold</p>
+            <li class="detail-heading">BEVEL</li>
+                <p>Gold</p>
+            <li class="detail-heading">LINER</li>
+                <p>Gold Leaf Tissue</p>
+            <li class="detail-heading">PRICE</li>
+                <p>Eng-L, Lett/Foil-L  <a href="img/Pricing-Book-2018-WO.pdf" download="Wedding Album Pricing">(Click for Price Chart)</a></p>
+                <p>Price includes double envelopes as well as return address</p>
+            <li class="detail-heading">NOTES</li>
+                <p>
+                    Shown Engraved<br>
+                    330# not available Thermographed/Printed<br>
+                    Second color monogram incurs addtional charge<br>
+                    Bevel incurs additional charge<br>
+                    Available in White (W18C330, W18I, W19O)
+                </p>
+        </ul>
+    </div>      
 </div>
 
 <script>
      $(document).ready(function(){
+        $("#detail-2").hide();
+        $("#detail-3").hide();
         $("#thumbnail-1").click(function(){
             $("#main-image").attr("src", "img/smith18.jpg");
+            $("#detail-1").show();
+            $("#detail-2").hide();
+            $("#detail-3").hide();
         });
         $("#thumbnail-2").click(function(){
             $("#main-image").attr("src", "img/mcguire.jpg");
+            $("#detail-1").hide();
+            $("#detail-2").show();
+            $("#detail-3").hide();
         });
         $("#thumbnail-3").click(function(){
             $("#main-image").attr("src", "img/campbell18.jpg");
+            $("#detail-1").hide();
+            $("#detail-2").hide();
+            $("#detail-3").show();
         });
      });
 </script>
